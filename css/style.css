@@ -40,6 +40,31 @@ h2 {
   font-family: 'Libre Baskerville', serif;
 }
 
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #000;
+  margin: 110px 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.49em;
+  font-weight: 700;
+  color: #000;
+  margin: 120px 0 48px 0;
+}
+
+h3 {
+  font-size: 1.3em;
+  font-weight: 700;
+  margin: 0 0 24px 0;
+}
+
+p {
+  font-size: 18px;
+}
+
 #home-page h1 {
   font-size: 2em;
   font-weight: 700;
@@ -56,18 +81,9 @@ h2 {
   text-align: left;
 }
 
-h1 {
-  font-size: 2em;
-  font-weight: 700;
-  color: #000;
-  margin: 110px 0;
-  text-align: center;
-}
-
-h2 {
-  font-size: 1.49em;
-  font-weight: 700;
-  color: #000;
+#contact-page h2 {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #000;
 }
 
 #intro {
@@ -77,6 +93,10 @@ h2 {
   background-size: cover;
   position: relative;
   padding: 150px 0 80px;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 /* =========================================================================
@@ -149,6 +169,27 @@ a.contact:focus {
 
 a.contact:active {
   color: #ff6149;
+}
+
+a.email {
+  color: #444;
+  font-weight: 600;
+}
+
+a.email:visited {
+  color: #444;
+  font-weight: 600;
+}
+
+a.email:hover,
+a.email:focus {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a.email:active {
+  color: #444;
 }
 
 footer a {
@@ -415,14 +456,6 @@ medium devices (640px and larger)
     padding-top: 67px;
   }
 
-  #about-page main {
-    padding: 120px 0 80px;
-  }
-
-  #about-page main .row {
-    margin-bottom: 40px;
-  }
-
   header {
     text-align: unset;
     padding: 10px 0;
@@ -432,9 +465,9 @@ medium devices (640px and larger)
     top: 4px;
   }
 
-  #about-page .cd-nav-trigger {
+  /*#about-page .cd-nav-trigger {
     top: 4px;
-  }
+  }*/
 
   .cd-nav-trigger span,
   .cd-nav-trigger span::after,
@@ -563,6 +596,18 @@ large devices (1024px or larger)
 
   .col-lg-4 {
     width: 33.3%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .left {
+    padding-right: 15px;
+  }
+
+  .right {
+    padding-left: 15px;
   }
 
   .middle {
