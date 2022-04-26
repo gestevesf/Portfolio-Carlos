@@ -86,6 +86,10 @@ p {
   border-bottom: 2px solid #000;
 }
 
+#autor-page h2 {
+  font-family: 'Inter', sans-serif;
+}
+
 #intro {
   background-image: url(../img/home-background.jpg);
   background-position: center;
@@ -112,6 +116,10 @@ layout styling
 .container {
   width: 100%;
   padding: 0 30px;
+}
+
+.section-card {
+  margin-top: 150px;
 }
 
 [class*="col-"] {
@@ -169,6 +177,28 @@ a.contact:focus {
 
 a.contact:active {
   color: #ff6149;
+}
+
+a.subtitle {
+  font-weight: 700;
+}
+
+a.subtitle:visited {
+  color: #fff;
+}
+
+a.subtitle:hover,
+a.subtitle:focus {
+  text-decoration: none;
+  font-weight: 700;
+  background-color: rgba(214, 73, 51, 1);
+  color: #fff;
+  box-shadow: 0 4px 4px 1px rgba(0, 0, 27, 0.3);
+  transition: 0.3s ease;
+}
+
+a.subtitle:active {
+  color: #fff;
 }
 
 a.email {
@@ -413,26 +443,40 @@ others styling
   /*width: 80%;*/
 }
 
-a.subtitle {
-  font-weight: 700;
+/* =========================================================================
+card pictures styling
+============================================================================ */
+.card {
+  position: relative;
+  width: 33.3%;
+  max-width: 300px;
 }
 
-a.subtitle:visited {
-  color: #000;
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
 }
 
-a.subtitle:hover,
-a.subtitle:focus {
-  text-decoration: none;
-  font-weight: 700;
-  background-color: rgba(214, 73, 51, 1);
-  color: #fff;
-  box-shadow: 0 4px 4px 1px rgba(0, 0, 27, 0.3);
-  transition: 0.3s ease;
+.overlay {
+  position: absolute;
+  bottom: -48px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 25px;
+  padding: 134px 0;
+  text-align: center;
+  border-radius: 20px;
 }
 
-a.subtitle:active {
-  color: #000;
+.card:hover .overlay {
+  opacity: 1;
 }
 
 /* =========================================================================
